@@ -41,12 +41,6 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
 
-          custom_instructions: |
-            
-
-          mcp_config: |
-            
-
           claude_args: |
             --allowedTools "Bash(git:*),Bash(/home/runner/work/_actions/anthropics/claude-code-action/v1/scripts/git-push.sh:*),Bash(gh:*),Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_navigate,mcp__playwright__browser_type,mcp__playwright__browser_screenshot"
             --mcp-config "{\"mcpServers\":{\"playwright\":{\"command\":\"npx\",\"args\":[\"@playwright/mcp@latest\",\"--allowed-origins\",\"localhost:3000;cdn.tailwindcss.com;esm.sh\"]}}}"
