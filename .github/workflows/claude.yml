@@ -74,7 +74,9 @@ jobs:
             Bash(/home/runner/work/_actions/anthropics/claude-code-action/v1/scripts/git-push.sh:*),
             mcp__playwright__browser_snapshot,
             mcp__playwright__browser_click,
-            ...
+            mcp__playwright__browser_navigate,
+            mcp__playwright__browser_type,
+            mcp__playwright__browser_screenshot
 
           # This is an optional setting that allows Claude to read CI results on PRs
           additional_permissions: |
